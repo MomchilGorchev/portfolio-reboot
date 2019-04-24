@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Space } from './util/mainCanvas'
+
+class App extends Component {
+
+  componentDidMount () {
+    Space()
+  }
+  render () {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <canvas id='welcome' />
+          <p class='placeholder-text'>
+            LANDING SOON
+          </p>
+          <span className='telemetry right'>
+            <span className='metric'>
+              PRESSURE: <span className='green'>optimal</span>
+            </span>
+            <br />
+            <span className='metric'>
+              TRAJECTORY: <span className='green'>optimal</span>
+            </span>
+            <br />
+            <span className='metric'>
+              FUEL: <span className='orange'>57%</span>
+            </span>
+          </span>
+          <span className='telemetry left'>
+            <span className='metric'>
+              LOCATION: <span className='green'>In transition</span>
+            </span>
+            <br />
+            <span className='metric'>
+              DESTINATION: <span className='green'>Proxima B UFH27679-9</span>
+            </span>
+            <br />
+            <span className='metric'>
+              SPEED: <span className='green'>optimal</span>
+            </span>
+          </span>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;

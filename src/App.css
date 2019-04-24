@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +17,50 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.placeholder-text {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  animation: pulse infinite 1s linear 
+}
+
+.telemetry {
+  bottom: 3%;
+  position: fixed;
+  text-align: left;
+  font-size: 13px;
+  color: burlywood;
+  opacity: .9;
+}
+
+.telemetry.right {
+  right: 3%;
+}
+
+.telemetry.left {
+  left: 3%;
+}
+
+.green {
+  color: green;
+  float: right;
+  margin-left: 5px;
+}
+
+.orange {
+  color: orange;
+  float: right;
+  margin-left: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
