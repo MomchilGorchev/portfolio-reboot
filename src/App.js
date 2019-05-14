@@ -5,10 +5,10 @@ import { Space } from './util/mainCanvas'
 
 class App extends Component {
 
-  componentDidMount () {
+  componentDidMount() {
     Space()
   }
-  render () {
+  render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -16,30 +16,31 @@ class App extends Component {
           <p class='placeholder-text'>
             LANDING SOON
           </p>
-          <span className='telemetry right'>
-            <span className='metric'>
-              PRESSURE: <span className='green'>optimal</span>
-            </span>
-            <br />
-            <span className='metric'>
-              TRAJECTORY: <span className='green'>optimal</span>
-            </span>
-            <br />
-            <span className='metric'>
-              FUEL: <span className='orange'>57%</span>
-            </span>
-          </span>
           <span className='telemetry left'>
             <span className='metric'>
               LOCATION: <span className='green'>In transition</span>
             </span>
-            <br />
             <span className='metric'>
               DESTINATION: <span className='green'>Proxima B UFH27679-9</span>
             </span>
-            <br />
             <span className='metric'>
               SPEED: <span className='green'>optimal</span>
+            </span>
+            <span className='metric'>
+              PRESSURE: <span className='green'>optimal</span>
+            </span>
+            <span className='metric'>
+              TRAJECTORY: <span className='green'>optimal</span>
+            </span>
+            <span className='metric'>
+              FUEL: <span className='orange'>57%</span>
+            </span>
+            <span className='metric'>
+              <div className='dial'>
+                <div className='label'>
+                  SHIELDS: <span className='orange'>8%</span>
+                </div>
+              </div>
             </span>
           </span>
         </header>

@@ -41,6 +41,11 @@
   left: 3%;
 }
 
+.metric {
+  display: inherit;
+  margin-top: 2px
+}
+
 .green {
   color: green;
   float: right;
