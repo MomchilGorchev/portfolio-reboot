@@ -3,6 +3,12 @@ import './App.css';
 
 import { Space } from './util/mainCanvas'
 
+
+// TODO
+// Add no zoom for mobile devices
+// Fix Canvas height
+// Add more widgets
+
 class App extends Component {
 
   componentDidMount() {
