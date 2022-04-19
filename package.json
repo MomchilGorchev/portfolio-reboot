@@ -33,5 +33,10 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
+  },
+  "resolutions": {
+    "minimist": "^1.2.6",
+    "url-parse": "^1.5.8",
+    "handlebars": "^4.7.7"
   }
 }
